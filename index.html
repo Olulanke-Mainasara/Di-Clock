@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Digital Clock</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/aae4243485.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="alpha-container" id="alpha">
+        <button class="selection" id="clockChangeAnalog"><p><i class="fa-regular fa-clock"></i> Digital</p></button>
+        <button class="selection" id="clockChangeDigital"><p><i class="fa-regular fa-clock"></i> Analog</p></button>
+
+        <div class="time-boxes" id="the-session"></div>
+
+        <div class="digital-clock" id="digitalClock">
+            <div class="time-boxes" id="the-clock"></div>
+        </div>
+
+        <div class="analog-clock" id="analogClock">
+            <div class="hand hour" id="hourHand"></div>
+            <div class="hand minute" id="minuteHand"></div>
+            <div class="hand second" id="secondHand"></div> 
+
+            <div class="number number1">|</div>
+            <div class="number number2">|</div>
+            <div class="number number3">3</div>
+            <div class="number number4">|</div>
+            <div class="number number5">|</div>
+            <div class="number number6">6</div>
+            <div class="number number7">|</div>
+            <div class="number number8">|</div>
+            <div class="number number9">9</div>
+            <div class="number number10">|</div>
+            <div class="number number11">|</div>
+            <div class="number number12">12</div>
+        </div>
+
+        <div class="time-boxes" id="the-day"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
