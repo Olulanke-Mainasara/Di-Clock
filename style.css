@@ -29,6 +29,10 @@ body {
     border: none;
 }
 
+.selection sub {
+    font-size: 15px;
+}
+
 #clockChangeDigital {
     display: none;
 }
@@ -139,7 +143,7 @@ body {
 
 .minute {
     width: 8px;
-    height: 35%;
+    height: 37%;
     background: white;
 }
 
@@ -190,3 +194,46 @@ body {
 
 .number10{--rotation: 300deg;}
 .number11{--rotation: 330deg;}
+
+
+/*----------------------Mobile Responsiveness---------------------------*/
+
+@media only screen and (max-width: 1024px) {
+    #the-session {
+        top: 35vh;
+    }
+
+    .analog #the-session {
+        top: 20vh;
+    }
+
+    #the-day {
+        bottom: 35vh;
+    }
+    
+    .analog #the-day {
+        bottom: 20vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .selection {
+        font-size: 30px;
+    }
+
+    .analog-clock {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .selection {
+        font-size: 20px;
+    }
+
+    .analog-clock {
+        width: 260px;
+        height: 260px;
+    }
+}
